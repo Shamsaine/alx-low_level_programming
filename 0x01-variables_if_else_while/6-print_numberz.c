@@ -6,7 +6,7 @@
  * Return: success always
  *
  */
-:wq
+
 int main(void)
 {
 	int x;
