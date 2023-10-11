@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <stdio.h>
-#include <stdout.h>
+#include "stdout.h"
 
 int _putchar(char c);
 void print_alphabet(void);
