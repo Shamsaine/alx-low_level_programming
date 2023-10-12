@@ -3,13 +3,13 @@
 /**
  * print_last_digit - function that prints the last digit of a number
  *
- * @n: function argument
+ * @a: function argument
  *
  * Return: success always
  *
  */
 
-int print_last_digit(int n)
+int print_last_digit(int a)
 {
 	int x = a % 10;
 
