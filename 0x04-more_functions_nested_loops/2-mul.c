@@ -6,7 +6,7 @@
  * @a: first integer
  * @b: second integer
  *
- * Retur: success always
+ * Return: success always
  *
  */
 
