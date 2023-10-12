@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * jack_bauer - Prints every minute of the day
@@ -7,6 +7,7 @@
  * Return: success always
  *
  */
+
 void jack_bauer(void)
 {
 	int hour, minute;
