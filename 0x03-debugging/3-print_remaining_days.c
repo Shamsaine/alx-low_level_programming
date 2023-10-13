@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_remaining_days - takes a date and print how many days are left in the yr
+ * print_remaining_days - take a date and print how many days re left in d yr
  *
  * @month: month in number format
  * @day: day of month
