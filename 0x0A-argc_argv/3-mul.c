@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 	else
 	{
 		a = atoi(argv[1]) * atoi(argv[2]);
-		printf("%i\n", n);	
+		printf("%i\n", a);	
 	}
 	return (x);
 }
