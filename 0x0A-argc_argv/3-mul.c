@@ -13,7 +13,18 @@
 
 int main(int argc, char **argv)
 {
+	int a, x;
 
-
-	return (0);
+	x = 0;
+	if (argc != 3)
+	{
+		puts("Error");
+		x = 1;
+	}
+	else
+	{
+		a = atoi(argv[1]) * atoi(argv[2]);
+		printf("%i\n", n);	
+	}
+	return (x);
 }
