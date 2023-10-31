@@ -51,7 +51,7 @@ int main(int argc, char **argv)
 	{
 		for (x = 1; x < argc; x++)
 		{
-			if (isnumber(argv[x]))
+			if (_isnumber(argv[x]))
 				y += atoi(argv[x]);
 			else
 				z = 1;
