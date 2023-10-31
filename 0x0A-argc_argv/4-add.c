@@ -2,6 +2,35 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+
+/**
+ * _isnumber - function that checks if a string is anumber
+ *
+ * @s: string to be checked
+ *
+ * Return: success always
+ *
+ */
+
+int _isnumber(char *s)
+{
+	int a, check, b;
+
+	a = 0, b = 0, check = 1;
+	if (*s == '-')
+		a++;
+	for (; *(s + a) != 0; a++)
+	{
+		b = isdigit(*(s + a));
+		if (b == 0)
+		{
+			check = 0;
+			break;
+		}
+	}
+	return (check);
+}
+
 /**
  * main - entry point
  *
