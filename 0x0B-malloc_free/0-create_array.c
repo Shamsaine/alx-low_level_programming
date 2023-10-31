@@ -22,10 +22,10 @@ char *create_array(unsigned int size, char c)
 	if (s == 0)
 		return (0);
 
-	for (i = 0; i < size; i++)
-		*(s + i) = c;
+	for (x = 0; x < size; x++)
+		*(s + x) = c;
 
-	*(s + i) = '\0';
+	*(s + x) = '\0';
 
 	return (s);
 
