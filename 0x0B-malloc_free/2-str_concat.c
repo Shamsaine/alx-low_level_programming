@@ -37,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 	for (y = 0; y < x1; y++)
 		*(s + y) = *(s1 + y);
 
-	for (y = 0; z = x1; y <= x2; z++; y++)
+	for (y = 0; (z = x1;) y <= x2; z++; y++)
 		*(s + z) = *(s2 + y);
 
 	return (s);
