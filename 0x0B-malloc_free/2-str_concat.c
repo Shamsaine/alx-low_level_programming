@@ -17,12 +17,15 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 		s1 = empty;
+
 	if (s2 == NULL)
 		s2 = empty;
 
 	x1 = 0, x2 = 0;
+
 	while (*(s1 + x1))
 		x1++;
+
 	while (*(s2 + x2))
 		x2++;
 
@@ -30,8 +33,10 @@ char *str_concat(char *s1, char *s2)
 
 	if (s == 0)
 		return (0);
+
 	for (y = 0; y < x1; y++)
 		*(s + y) = *(s1 + y);
+
 	for (y = 0; z = x1; y <= x2; y++; z++)
 		*(s + z) = *(s2 + y);
 
