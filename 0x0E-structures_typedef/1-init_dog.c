@@ -3,7 +3,7 @@
 /**
  * init_dog - function that initializes a variable of tpe struct dog
  *
- * @@d: first element of the struct
+ * @d: first element of the struct
  * @name:  dog name
  * @age: dog age
  * @owner: dog owner
