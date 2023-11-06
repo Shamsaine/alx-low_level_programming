@@ -1,5 +1,4 @@
 #include <stdio.h>
-#define __FILE__
 
 /**
  * main - entry point
@@ -9,6 +8,6 @@
 
 int main(void)
 {
-	 __FILE__;
+	 printf("%s\n", __FILE__);
 	return (0);
 }
