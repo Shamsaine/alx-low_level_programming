@@ -22,10 +22,10 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		sum += va_arg(pointer, int);	
+		sum += va_arg(pointer, int);
 	}
 	va_end(pointer);
-	
+
 	return (sum);
 
 
