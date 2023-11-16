@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef LISTS_H
+#define LISTS_H
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,14 +10,16 @@
  * struct node - structure to creat node for the linkedlist
  *
  * @value: the data in the list
+ * @len: length
  * @link: link to the memory address of the next value
  *
  */
 
-struct node{
-	int value;
+typedef struct node{
+	char str;
+	unsigned int len;	
 	struct node *link;
-};
+}list_t;
 
 /* Function Prototypes */
 
