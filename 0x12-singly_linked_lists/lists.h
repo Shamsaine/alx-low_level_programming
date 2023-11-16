@@ -9,14 +9,14 @@
 /*
  * struct node - structure to creat node for the linkedlist
  *
- * @value: the data in the list
+ * @string: the data in the list
  * @len: length
  * @link: link to the memory address of the next value
  *
  */
 
 typedef struct node{
-	char str;
+	char string;
 	unsigned int len;	
 	struct node *link;
 }list_t;
