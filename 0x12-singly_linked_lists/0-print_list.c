@@ -14,10 +14,10 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		if (h->string == NULL)
+		if (h->string == '\0')
 			printf("[0] (nil)\n");
 		else
-			printf("[%d] %s\n", h->len, h->string);
+			printf("[%d] %d\n", h->len, h->string);
 
 		nodes_counted++;
 		h = h->link;

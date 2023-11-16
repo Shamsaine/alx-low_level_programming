@@ -16,7 +16,7 @@
  */
 
 typedef struct node{
-	char string;
+	int string;
 	unsigned int len;	
 	struct node *link;
 }list_t;
