@@ -6,20 +6,20 @@
 #include <stdarg.h>
 #include <ctype.h>
 
-/*
- * struct node - structure to creat node for the linkedlist
+/**
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
  *
- * @string: the data in the list
- * @len: length
- * @link: link to the memory address of the next value
- *
+ * Description: singly linked list node structure
  */
-
-typedef struct node{
-	int string;
-	unsigned int len;	
-	struct node *link;
-}list_t;
+typedef struct list_s
+{
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
 
 /* Function Prototypes */
 
