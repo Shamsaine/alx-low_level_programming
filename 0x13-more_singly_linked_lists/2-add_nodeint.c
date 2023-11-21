@@ -3,7 +3,7 @@
 /**
  * add_nodeint - adds new node to the beginning of a linked list
  *
- * @h: head
+ * @head: pointer to the head
  * @n: new node data
  *
  * Return: the addresses of the new element or NULL if failed
