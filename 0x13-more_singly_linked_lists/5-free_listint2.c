@@ -5,6 +5,7 @@
  *
  * @head: pointer to a head
  *
+ * Return: void
  */
 
 void free_listint2(listint_t **head)
@@ -14,15 +15,15 @@ void free_listint2(listint_t **head)
 
 	if (head)
 	{
-		*prev_node = head;
-		
-		while (prev_node != NULL)
+		prev_node = *head;
+
+		while (prev_node)
 		{
 			next_node = prev_node->next;
 			free(prev_node);
 			prev_node = next_node;
 		}
-		
+
 		*head = NULL;
 	}
 }
