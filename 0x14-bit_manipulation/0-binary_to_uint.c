@@ -13,12 +13,11 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int len;
-	unsigned int x, y, sum, index;
-	int base;
-
-	base = 2;
-	sum = 0;
-	index = 1;
+	size_t x = 0;
+	size_t y = 0;
+	size_t sum = 0;
+	size_t index = 1;
+	int base = 2;
 
 	if (b == NULL)
 		return (0);
