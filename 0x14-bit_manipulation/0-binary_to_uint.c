@@ -32,7 +32,8 @@ unsigned int binary_to_uint(const char *b)
 		if (b[x] != '0' && b[x] != '1')
 			return (0);
 		for (y = len - 1; y > 0; y--)
-			;
+			len--;
+
 		index = index * base;
 		sum = sum + (index * (b[x] - 48));
 		len--;
