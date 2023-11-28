@@ -12,10 +12,13 @@
 
 int create_file(const char *filename, char *text_content)
 {
+	int descriptor;
+	ssize_t bytesWritten;
+
 	if (filename == NULL)
 		return (-1);
 
-	int descriptor = open(filename, O_WRONLY |
+	descriptor = open(filename, O_WRONLY |
 		       O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
 
 	if (descriptor == -1)
@@ -23,10 +26,10 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		ssize_t bytes_written = write(descriptor,
+		bytesWritten = write(descriptor,
 				text_content, strlen(text_content));
 
-		if (bytes_written == -1)
+		if (bytesWritten == -1)
 		{
 			close(descriptor);
 			return (-1);
